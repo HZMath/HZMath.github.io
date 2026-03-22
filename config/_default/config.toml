@@ -1,7 +1,7 @@
 # Change baseurl before deploy
 baseurl      = "https://hzmath.github.io/"
-languageCode = "en-us"
-title        = "河源中学数学研究协会官方网站"
+languageCode = "zh-cn"
+title        = "河源中学数学研究协会"
 
 # Theme i18n support
 # See all available values at https://github.com/CaiJimmy/hugo-theme-stack/tree/master/i18n

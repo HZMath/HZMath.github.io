@@ -11,7 +11,7 @@ SortBy              = "default"
 
 [footer]
     since      = 2026
-    customText = "河源中学数学研究协会"
+    customText = ""
 
 [dateFormat]
     published   = ":date_full"
@@ -28,8 +28,8 @@ SortBy              = "default"
     readingTime   = true
 
     [article.license]
-        enabled = false
-        default = "Licensed under CC BY-NC-SA 4.0"
+        enabled = true
+        default = "All Right Reserved, 河源中学数学研究协会"
 
 [widgets]
     homepage = [
