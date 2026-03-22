@@ -2,7 +2,7 @@
 title: "2025年河源中学高一年级数学竞赛试题"
 description: 2025年河源中学高一年级数学竞赛试题
 date: 2025-12-19
-image: figure1.png
+image:
 math: true
 license: All Right Reserved, 河源中学数学研究协会
 hidden: false
