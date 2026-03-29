@@ -1,0 +1,19 @@
+[project]
+name = "hzmath-website"
+version = "0.1.0"
+description = "数协网站, Python 部分只用于生成 Sphinx 文档"
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = []
+
+[project.optional-dependencies]
+sphinx = [
+    "sphinx>=9.1.0",
+    "sphinx-autobuild>=2025.8.25",
+    "sphinx-copybutton>=0.5.2",
+    "sphinx-inline-tabs>=2025.12.21.14",
+    "sphinx-prompt>=1.10.2",
+    "sphinx-rtd-theme>=3.1.0",
+    "sphinxcontrib-asciinema>=0.4.3",
+    "sphinxcontrib-mermaid>=2.0.1",
+]

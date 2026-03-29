@@ -4,3 +4,7 @@ resources
 .DS_Store
 assets/jsconfig.json
 .idea/
+
+.python-version
+uv.lock
+.venv/
