@@ -153,8 +153,33 @@ $\uarr \uarr \uarr$ 上面的导数公式给我背熟！！！ $\uarr \uarr \uar
 但是, 由于三角函数的周期性, 使得 6 个三角函数在 $\mathbb{R}$ 上都不是单射, 所以都没有反函数.
 这样子, 我们就必须对定义域进行限制, 保证反函数的存在性.
 
-怎么限制呢？不妨直接选一个周期或半个周期长的区间, 在保证值域最大的基础上尽量靠近原点, 那我们就只需要考虑下面的函数:
+怎么限制呢？不妨直接选一个周期或半个周期长的区间, 在保证值域和定义域为 $\mathbb{R}$ 的值域相同的基础上, 尽量靠近原点, 那我们就只需要考虑下面的函数:
 
 1. $y = \sin x, x \in \left[-\frac{\pi}{2}, \frac{\pi}{2}\right], y \in [-1, 1]$
 2. $y = \cos x, x \in [0, \pi], y \in [-1, 1]$
 3. $y = \tan x, x \in \left(-\frac{\pi}{2}, \frac{\pi}{2}\right), y \in \mathbb{R}$
+
+于是我们就可以定义反正弦、反余弦和反正切函数
+
+- $y = \arcsin x, x \in [-1, 1], y \in [-\frac{\pi}{2}, \frac{\pi}{2}]$
+- $y = \arccos x, x \in [-1, 1], y \in [0, \pi]$
+- $y = \arctan x, x \in \mathbb{R}, y \in [-\frac{\pi}{2}, \frac{\pi}{2}]$
+
+### 反三角函数的图像和性质
+
+![arcsin x](arcsin.png)
+![arccos x](arccos.png)
+![arctan x](arctan.png)
+
+#### 单调性
+
+- $\arcsin x, \arctan x$ 在其定义域内单调递增
+- $\arccos x$ 在定义域内单调递减
+
+#### 奇偶性
+
+- $\arcsin x, \arctan x$ 都为奇函数
+- $\arccos x$ 既不是奇函数也不是偶函数
+
+|到这里其实反三角函数就了解的差不多咯~
+|我们还是推荐看B 站[宋浩老师](https://space.bilibili.com/66607740)的视频awa
