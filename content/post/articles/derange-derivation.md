@@ -5,7 +5,7 @@ date: 2026-04-03
 lastmod: 2026-04-03
 image: 
 math: true
-license: Written by Qianwen
+license: co-authored-by Qianwen
 draft: true
 categories:
 - Articles
