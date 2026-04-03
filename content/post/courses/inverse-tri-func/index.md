@@ -165,8 +165,8 @@ $\uarr \uarr \uarr$ 上面的导数公式给我背熟！！！ $\uarr \uarr \uar
 
 ### 反三角函数的图像和性质
 
-![arcsin x](arcsin.png)
-![arccos x](arccos.png)
+![arcsin x](arcsin.png)  ![arccos x](arccos.png)
+
 ![arctan x](arctan.png)
 
 #### 单调性
