@@ -1,13 +1,13 @@
 ---
 title: "课外拓展: 反三角函数"
-description: '三角函数和反三角函数'
-date: 2026-03-29
+description: '余切、正割、余割和反三角函数'
+date: 2026-04-03
 image: 
 math: true
 license: All Right Reserved, 河源中学数学研究协会
 hidden: false
 comments: true
-draft: true
+draft: false
 categories:
    - Courses
 tags:
@@ -74,9 +74,7 @@ $$
 
 先给出一个定理:
 
-:::{theorem} 定理 1
-对于任意的函数 $f(x)$, 它与 $\cfrac{1}{f(x)}$ 的奇偶性相同.
-:::
+> 对于任意的函数 $f(x)$, 它与 $\cfrac{1}{f(x)}$ 的奇偶性相同.
 
 此定理是显然的.
 
@@ -181,5 +179,5 @@ $\uarr \uarr \uarr$ 上面的导数公式给我背熟！！！ $\uarr \uarr \uar
 - $\arcsin x, \arctan x$ 都为奇函数
 - $\arccos x$ 既不是奇函数也不是偶函数
 
-|到这里其实反三角函数就了解的差不多咯~
-|我们还是推荐看B 站[宋浩老师](https://space.bilibili.com/66607740)的视频awa
+到这里其实反三角函数就了解的差不多咯~<br>
+我们还是推荐看B 站[宋浩老师](https://space.bilibili.com/66607740)的视频awa
