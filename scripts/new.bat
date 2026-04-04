@@ -1,0 +1,1 @@
+hugo new content %0
