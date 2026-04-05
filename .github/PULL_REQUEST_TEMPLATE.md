@@ -1,12 +1,3 @@
----
-name: 文章投稿/修改
-about: 向数协投稿文章
-title: '[Article] '
-labels:
-- article
-- pending
----
-
 <!--
 你可以在这里添加你的 PR 描述, 介绍你的文章内容和亮点, 或者其他你想让我们知道的信息.
 

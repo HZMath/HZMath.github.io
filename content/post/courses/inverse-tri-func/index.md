@@ -179,5 +179,5 @@ $\uarr \uarr \uarr$ 上面的导数公式给我背熟！！！ $\uarr \uarr \uar
 - $\arcsin x, \arctan x$ 都为奇函数
 - $\arccos x$ 既不是奇函数也不是偶函数
 
-到这里其实反三角函数就了解的差不多咯~<br>
+到这里其实反三角函数就了解的差不多咯~ </br>
 我们还是推荐看B 站[宋浩老师](https://space.bilibili.com/66607740)的视频awa
