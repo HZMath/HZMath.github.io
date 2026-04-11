@@ -78,6 +78,12 @@ I &= \int \sqrt{1 - \sin^2 t} \cos t \mathrm{d}t \\
 \end{aligned}
 $$
 
+记得变量还原, 由 $x = \sin t$ 可得 $t = \arcsin x$, 又因为 $\sin 2t = 2 \sin t \cos t = 2x \sqrt{1 - x^2}$, 故
+
+$$
+I = \cfrac{1}{2} \arcsin x + \cfrac{1}{2} x \sqrt{1 - x^2} + C
+$$
+
 ### 练习
 
 1. $ \displaystyle \int \sqrt{4 - x^2} dx $
