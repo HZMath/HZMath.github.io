@@ -40,6 +40,9 @@ G --> C
    - 转载的文章***必须***特别在 Markdown Front Matter 的 license 字段和 PR 描述内注明授权信息
 3. 投稿文章***必须***放到 `content/external` 目录下
 
+> [!IMPORTANT]
+> 文章内容要保证合法合规, 不得包含任何政治敏感、色情暴力、反动等不当内容, 违反上述要求的文章将被拒绝, 且提交者可能会被永久禁止投稿
+
 ## PR 要求
 
 1. 一个 PR 一件事:
@@ -51,17 +54,4 @@ G --> C
 
 ## Front Matter 模板
 
-```markdown
----
-title: 文章标题
-description: 文章简介
-author: 你的名字
-date: 2024-01-01
-license: "CC BY-SA 4.0" # 转载文章必须注明授权信息
-categories: # 仓库内有所有可用的 tags 和 categories 的列表
-- Contest
-tags: 
-- 数论
-- 解题技巧
----
-```
+见 [`archetypes/post.md`](archetypes/post.md)
