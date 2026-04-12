@@ -1,6 +1,6 @@
 ---
-name: 邮箱文章投稿
-about: 通过邮箱向数协投稿文章, 这应该由数协社干创建
+name: 新功能
+about: 提交新功能的 PR, 这应该与某一 issue 相关联
 title: '[Feature] '
 labels:
 - enhancement
