@@ -15,7 +15,8 @@
 在收到邮件后我们将尽快处理并发送回复邮件, 提交 PR 后我们会把对应的 PR 号发送至提交稿件的信箱, 之后的审核流程与正常 PR 相同.
 
 > [!IMPORTANT]
-> 投稿的审核工作完全由社干利用课余时间完成，无法保证实时处理, 导致我们的审核周期比较长, 短则一两天, 长则甚至需要几周, 请耐心等待 awa
+> 投稿的审核工作完全由社干利用周末时间完成，无法保证实时处理,
+> 导致我们的审核周期比较长, 短则一两天, 长则甚至需要几周, 请耐心等待 awa
 
 ```mermaid
 graph TD
@@ -43,15 +44,29 @@ G --> C
 > [!IMPORTANT]
 > 文章内容要保证合法合规, 不得包含任何政治敏感、色情暴力、反动等不当内容, 违反上述要求的文章将被拒绝, 且提交者可能会被永久禁止投稿
 
-## PR 要求
+## Pull Request 要求
 
 1. 一个 PR 一件事:
    - 如果是发布文章, 那么一个 PR 一篇文章
    - 如果是修改信息, 那你可以一个 PR 同时修改多篇文章
 2. PR 标题需要有 `[Article]` 前缀
-3. 仅接受 Markdown (.md) 文件.若你希望提交 latex 文件, 请确保勾选 `Allow edits by maintainers`, 我们将协助转换, 但转换结果需经你确认
+3. 仅接受 Markdown (.md) 文件.
 4. ***必须***勾选 PR 模板中的复选框, 确认你的 PR 符合本贡献指南中的要求, 未勾选的 PR 不予合并
 
-## Front Matter 模板
+## Front Matter
 
-见 [`archetypes/post.md`](archetypes/post.md)
+模板见 [`archetypes/post.md`](archetypes/post.md)
+
+如果你在本地或 CodeSpace 内安装了 hugo-extended 的话, 你可以直接使用
+
+```shell
+$ hugo new external/name/index.md
+```
+
+创建一个带有模板 Front Matter 的空白 Markdown 文件.
+
+请按要求填写 Front Matter.
+
+> [!IMPORTANT]
+> license 字段留空, 将会自动填充 `All Right Reserved, 河源中学数学研究协会`
+
