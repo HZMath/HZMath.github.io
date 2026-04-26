@@ -23,7 +23,7 @@ tags:
 
 B 站[宋浩老师](https://space.bilibili.com/66607740)的课还是很不错的, 可以去看看
 
-{{< bilibili "BV1Eb411u7Fw" >}}
+{{< bilibili "BV1Eb411u7Fw" 9 >}}
 
 看完你就不需要继续看这篇文章咯
 
@@ -56,11 +56,11 @@ $$
 由上面的定义可得下表
 
 <!--markdownlint-disable MD060-->
-|    函数    |                             存在域                              |                值域                 |
-|:--------:|:------------------------------------------------------------:|:---------------------------------:|
-| $\cot x$ |        $x \in \{x \| x \neq k\pi, k \in \mathbb{Z}\}$        |           $\mathbb{R}$            |
-| $\sec x$ | $x \in \{x \| x \neq \frac{\pi}{2} k\pi, k \in \mathbb{Z}\}$ | $(-\infty, -1] \cup [1, +\infty)$ |
-| $\csc x$ |        $x \in \{x \| x \neq k\pi, k \in \mathbb{Z}\}$        | $(-\infty, -1] \cup [1, +\infty)$ |
+|    函数    |                          存在域                           |                值域                 |
+|:--------:|:------------------------------------------------------:|:---------------------------------:|
+| $\cot x$ |       $\\{x \| x \neq k\pi, k \in \mathbb{Z}\\}$       |           $\mathbb{R}$            |
+| $\sec x$ | $\\{x \| x \neq \frac{\pi}{2} k\pi, k \in \mathbb{Z}\\}$ | $(-\infty, -1] \cup [1, +\infty)$ |
+| $\csc x$ |        $\\{x \| x \neq k\pi, k \in \mathbb{Z}\\}$        | $(-\infty, -1] \cup [1, +\infty)$ |
 
 #### 周期性
 

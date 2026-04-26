@@ -1,6 +1,6 @@
 ---
 title: "{{ replace .Name "-" " " | title }}"
-description: 
+description:
 date: {{ .Date }}
 image: 
 math: true

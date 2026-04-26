@@ -2,3 +2,4 @@
 post = "/post/:year/:month/:slug/"
 page = "/:slug/"
 external = "/external/:year/:month/:slug/"
+courses = "/courses/:year/:month/:slug/"
