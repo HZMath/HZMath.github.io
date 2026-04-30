@@ -79,8 +79,8 @@ tags:
 9. 已知  $m, n $ 均为正整数，且 $ m<n $ ，则
     - A. $\mathrm{C}^5_{11} = \mathrm{C}^6_{11}$
     - B. $\mathrm{A}^{m}_n = \mathrm{A}^{n-m}_n$
-    - C. $\mathrm{A}_n^{m-1} = \mathrm{C}_n^{m-1} \mathrm{A}_{m-1}^{m-1} (m>1)$
-    - D. $\dfrac{1}{n-m} \mathrm{A}^{m+1}_{n} = \mathrm{A}_{n}^{m}$
+    - C. $\mathrm{A}^{m-1}_n = \mathrm{C}^{m-1}_n \mathrm{A}^{m-1}\_{m-1} (m>1)$
+    - D. $\frac{1}{n-m} \mathrm{A}^{m+1}_{n} = \mathrm{A}\_{n}^{m}$
 10. 甲、乙、丙、丁四名同学报名参加假期社区服务活动，社区服务活动共有＂关怀老人＂、＂环境检测＂、＂图书义卖＂这三个项目，每人都要报名且限报其中一项，则下列说法正确的是
     - A. 四名同学的报名情况共有  $3^{4}$  种
     - B. 每个项目都有人报名的情况共有 $36$ 种
