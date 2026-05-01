@@ -20,7 +20,7 @@ on:
       - labeled
 
 jobs:
-  pr-check:
+  pr-comment:
     runs-on: ubuntu-latest
 
     # To reduce useless runs
@@ -64,7 +64,7 @@ jobs:
 
       - name: Check and Report
         run: |
-          python scripts/cicd/main.py
+          python scripts/ci/main.py
         env:
           # scripts
           github_api_token: ${{ secrets.GITHUB_TOKEN }}
