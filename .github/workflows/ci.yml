@@ -12,7 +12,7 @@ on:
     branches:
       - master
     paths-ignore: # Skip run for security reasons
-      - .github/workflows/**/*.py
+      - scripts/ci/**/*.py
     types:
       - opened
       - synchronize
@@ -20,7 +20,7 @@ on:
       - labeled
 
 jobs:
-  pr-comment:
+  pr-check:
     runs-on: ubuntu-latest
 
     # To reduce useless runs
@@ -40,13 +40,14 @@ jobs:
       - uses: actions/cache@v4
         with:
           path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('**/requirements.txt') }}
+          key: ${{ runner.os }}-pip-${{ hashFiles('pyproject.toml') }}
           restore-keys: |
             ${{ runner.os }}-pip-:
 
       - name: Setup Requirements
         run: |
-          pip install .[ci]
+          python -m pip install --upgrade pip
+          pip install -e '.[ci]'
 
       - name: Get changed files
         id: changed-files
