@@ -20,7 +20,7 @@ class Tag(str, Enum):
     ARTICLE_ADD = "article add"
     ARTICLE_MODIFY = "article modify"
     ARTICLE_REMOVE = "article remove"
-    WORKFLOW = "github workflow"
+    CI = "CI/CD"
     SCRIPTS = "scripts"
 
     @property
@@ -30,7 +30,7 @@ class Tag(str, Enum):
         All post changes labels `posts`
         """
         if self in (self.ARTICLE_ADD, self.ARTICLE_MODIFY, self.ARTICLE_REMOVE):
-            return "posts"
+            return "article"
         return self.value  # type: ignore
 
 
