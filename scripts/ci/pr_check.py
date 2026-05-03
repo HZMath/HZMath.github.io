@@ -152,6 +152,16 @@ for file in sorted(all_files, key=lambda x: x.endswith(".md"), reverse=True):
     path = Path(file).parts
     if len(path) > 1 and path[0] == "content":
 
+        if path[-1] != "index.md" and path[-1].endswith(".md"):  # for single-file post
+            post = path[-1][:-3]
+            if file in added_files:
+                actions.add(Action(Tag.ARTICLE_ADD, post))
+            elif file in deleted_files:
+                actions.add(Action(Tag.ARTICLE_REMOVE, post))
+            else:
+                actions.add(Action(Tag.ARTICLE_MODIFY, post))
+            continue
+
         post = path[-2]
         if path[-1] == "index.md":  # for directory post
             if file in added_files:

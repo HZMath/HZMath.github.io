@@ -27,11 +27,11 @@ class Tag(str, Enum):
     def label(self) -> str:
         """Pull request label name from tags
 
-        All post changes labels `posts`
+        All post changes labels `article`
         """
         if self in (self.ARTICLE_ADD, self.ARTICLE_MODIFY, self.ARTICLE_REMOVE):
             return "article"
-        return self.value  # type: ignore
+        return self.value
 
 
 class Action:

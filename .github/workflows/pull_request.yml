@@ -65,7 +65,7 @@ jobs:
 
       - name: Check and Report
         run: |
-          python scripts/ci/main.py
+          python scripts/ci/pr_check.py
         env:
           # scripts
           github_api_token: ${{ secrets.GITHUB_TOKEN }}
