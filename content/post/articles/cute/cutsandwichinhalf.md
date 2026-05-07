@@ -1,7 +1,7 @@
 ---
 title: "呜呜呜，小南梁吃不起饭了😢"
 description: 三角形面积的平分线
-date: 2026-03-28
+date: 2026-05-07
 image:
 math: true
 license: All Right Reserved, 河源中学数学研究协会
