@@ -115,7 +115,7 @@ $$
 因此
 
 $$
-\left | OA \right | \left | OB \right | = \frac{a^2+b^2}
+\left | OA \right | \left | OB \right | = {a^2+b^2}
 $$
 
 
