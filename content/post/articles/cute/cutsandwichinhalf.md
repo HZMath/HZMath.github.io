@@ -63,7 +63,7 @@ tags:
 
 由三角形面积不变，有
 $$
-S_{\bigtriangleup XCG}=\frac{1}{2} XC\cdot XG=\frac{1}{2} XC^2=S_{\bigtriangleup XFH}=\frac{1}{2} XF\cdot XH=\frac{1}{2} XF^2
+S_{\bigtriangleup XCG}=\frac{1}{2} XC\cdot XGsin{\theta}=\frac{1}{2} XC^{2}sin{\theta}=S_{\bigtriangleup XFH}=\frac{1}{2} XF\cdot XHsin{\theta}=\frac{1}{2} XF^{2}sin{\theta}
 $$
 
 因此
