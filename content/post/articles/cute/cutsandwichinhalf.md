@@ -65,7 +65,7 @@ tags:
 由三角形面积不变，有
 
 $$
-S_{\bigtriangleup XCG}=\frac{1}{2} XC\cdot XGsin{\theta}=\frac{1}{2} XC^{2}sin{\theta}=S_{\bigtriangleup XFH}=\frac{1}{2} XF\cdot XHsin{\theta}=\frac{1}{2} XF^{2}sin{\theta}
+S_{\bigtriangleup XCG}=\frac{1}{2} XC\cdot XG\sin{\theta}=\frac{1}{2} XC^{2}\sin{\theta}=S_{\bigtriangleup XFH}=\frac{1}{2} XF\cdot XH\sin{\theta}=\frac{1}{2} XF^{2}\sin{\theta}
 $$
 
 因此
@@ -78,6 +78,65 @@ $X$ 为 $CF$ 的中点，证毕！！！
 
 ## 上面那个结论的证明
 
-待补充...
+考虑平面直角坐标系 $xOy$ 中的双曲线 $\frac{x^{2}}{a^{2}}-\frac{y^{2}}{b^{2}}=1$ ,作它在点 $P(x_0,y_0)$ 处的切线 $l$ ，分别交双曲线的渐近线 $m: y=\frac{b}{a} x$ 与 $n: y=-\frac{b}{a} x$ 于点 $A(x_1,y_1), B(x_2, y_2)$ .
+
+由“代一半”法（证明略），得切线方程为：
+
+$$
+\frac{x_{0}x}{a^{2}}-\frac{y_{0}y}{b^{2}}=1
+$$
+
+接着，直接联立 $l$ 与 $m$， $l$ 与 $n$ 的方程，解得
+
+$$
+\left\{\begin{matrix} 
+  x_1=\frac{a^2 b}{bx_0-y_0}  \\  
+  y_1=\frac{ab^2}{bx_0-y_0}  
+\end{matrix}\right. 
+
+\left\{\begin{matrix} 
+  x_2=\frac{a^2 b}{bx_0+y_0}  \\  
+  y_2=-\frac{ab^2}{bx_0+y_0}  
+\end{matrix}\right. 
+$$
+
+因此
+
+$$
+\left | OA \right | \left | OB \right | =\sqrt{x_1^2+y_1^2} \sqrt{x_2^2+y_2^2}=\frac{a^4b^2+a^2b^4}{b^2x_0^2+a^2y_0^2}=\frac{a^2+b^2}{\frac{x_0^{2}}{a^{2}}-\frac{y_0^{2}}{b^{2}}}   
+$$
+
+根据 $P(x_0,y_0)$ 在双曲线上，有
+
+$$
+\frac{x_0^{2}}{a^{2}}-\frac{y_0^{2}}{b^{2}}=1
+$$
+
+因此
+
+$$
+\left | OA \right | \left | OB \right | = \frac{a^2+b^2}
+$$
+
+
+渐近线与 $x$ 轴所成角满足
+
+$$
+\sin{\angle AOx}=\frac{a}{\sqrt{a^2+b^2} }, \cos{\angle AOx}=\frac{b}{\sqrt{a^2+b^2} }
+$$
+
+所以由对称性
+
+$$
+\sin{\angle AOB}=\sin{2\angle AOx}=2\sin{\angle AOx}\cos{\angle AOx}=\frac {2ab}{a^2+b^2}
+$$
+
+因此
+
+$$
+S_{\triangle  AOB}=\frac{1}{2} \left | OA \right |  \left | OB \right | \sin{\angle AOB}=ab
+$$
+
+所以 $\triangle AOB$ 的面积为定值 $ab$ .证毕！！！！！！！！！！
 
 更多疑问可致信河中数协官方邮箱<hyzxmath@outlook.com>或者在下方评论区留言，小南梁会耐心为您解答♡
