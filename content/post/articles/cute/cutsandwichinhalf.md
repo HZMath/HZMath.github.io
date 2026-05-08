@@ -93,7 +93,9 @@ $$
   x_1=\frac{a^2 b}{bx_0-y_0}  \\  
   y_1=\frac{ab^2}{bx_0-y_0}  
 \end{matrix}\right. 
+$$
 
+$$
 \left\{\begin{matrix} 
   x_2=\frac{a^2 b}{bx_0+y_0}  \\  
   y_2=-\frac{ab^2}{bx_0+y_0}  
