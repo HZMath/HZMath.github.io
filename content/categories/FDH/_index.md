@@ -5,6 +5,6 @@ description:
 
 style:
     background: "#ff348f8f"
-    color: "#ff66ccff"
+    color: "#8ef"
 ---
 
