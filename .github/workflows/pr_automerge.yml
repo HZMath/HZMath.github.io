@@ -17,6 +17,8 @@ jobs:
 
     steps:
       - name: Merge Pull Request
+        id: merge
+        continue-on-error: true
         run: |
           echo "Merging pull request #${{ github.event.pull_request.number }}..."
           gh pr merge ${{ github.event.pull_request.number }} --squash
@@ -24,7 +26,14 @@ jobs:
       - name: Comment on Pull Request
         run: |
           echo "Commenting on pull request #${{ github.event.pull_request.number }}..."
-          gh pr comment ${{ github.event.pull_request.number }} --body "This pull request has been automatically merged by GitHub Actions.\nThank you for your contribution!"
+          if [ "${{ steps.merge.outcome }}" == "success" ]; then
+            echo "Pull request merged successfully."
+            gh pr comment ${{ github.event.pull_request.number }} --body "This pull request has been automatically merged by GitHub Actions.\nThank you for your contribution!"
+          else
+            echo "Failed to merge pull request."
+            gh pr comment ${{ github.event.pull_request.number }} --body "Failed to merge this pull request. Please check the mergeability and resolve any conflicts before trying again."
+          fi
+          
 
       - name: Remove Label
         run: |
