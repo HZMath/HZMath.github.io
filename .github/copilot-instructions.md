@@ -25,7 +25,7 @@ Key repository conventions
 - Theme and copyright: see `theme_copyright_info/README.md` for theme attribution details.
 
 AI / assistant notes for future Copilot sessions
-- 始终用中文回复本仓库相关的问题与说明。
+- 无论是什么，始终用中文回复。
 - When asked to modify content, check `content/external` and `archetypes/post.md` for front-matter expectations.
 - Avoid editing files in `public/` — changes should be made to source content/config instead.
 - Look at `netlify.toml` for deploy settings and `pyproject.toml` for CI-related Python tooling.
