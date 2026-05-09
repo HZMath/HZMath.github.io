@@ -89,7 +89,17 @@ $$
 接着，直接联立 $l$ 与 $m$， $l$ 与 $n$ 的方程，解得
 
 $$
-x_1=\frac{a^2 b}{bx_0-y_0}, y_1=\frac{ab^2}{bx_0-y_0}, x_2=\frac{a^2 b}{bx_0+y_0}, y_2=-\frac{ab^2}{bx_0+y_0}  
+\begin{cases}
+x_1=\frac{a^2 b}{bx_0-y_0}, \\
+y_1=\frac{ab^2}{bx_0-y_0}, 
+\end{cases}
+$$
+
+$$
+\begin{cases}
+x_2=\frac{a^2 b}{bx_0+y_0}, \\
+y_2=-\frac{ab^2}{bx_0+y_0}.
+\end{cases}
 $$
 
 因此
