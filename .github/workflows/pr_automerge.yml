@@ -1,40 +1,64 @@
 name: Pull Request Auto Merge
 
 on:
-  pull_request_target:
-    types:
-      - labeled
+  workflow_dispatch:
+    inputs:
+      pr_number:
+        description: 'Pull Request Number'
+        required: false
+        type: number
+        default: 0
 
 permissions:
-  contents: write
   pull-requests: write
   issues: write
 
 jobs:
   automerge:
     runs-on: ubuntu-latest
-    if: github.event.label.name == 'mergeable'
+
+    env:
+      MSG_SUCCESS: |
+        This pull request has been automatically merged by GitHub Actions.
+        Thank you for your contribution!
+      MSG_FAILURE: |
+        This pull request could not be merged automatically. Please check the mergeability and resolve any conflicts before trying again.
+        See [Actions Logs]($GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID) for more details.
+      MSG_NOT_MERGEABLE: |
+        This pull request is not labeled as mergeable. Please ensure it meets the criteria for merging and add the 'mergeable' label before trying again.
+
+      pr: ${{ github.event.inputs.pr_number }}
 
     steps:
+      - name: Check Mergeability  # Check if the pull request is labeled as mergeable
+        run: |
+          echo "Checking if PR #$pr is labeled as mergeable..."
+          if gh pr view $pr --json labels --jq '.labels[].name' | grep -q "mergeable"; then
+            echo "Pull request is labeled as mergeable. Proceeding with merge."
+          else
+            echo "Pull request is not labeled as mergeable. Skipping merge."
+            gh pr comment $pr --body "$MSG_NOT_MERGEABLE"
+            exit 1
+          fi
+
       - name: Merge Pull Request
         id: merge
         continue-on-error: true
         run: |
-          echo "Merging pull request #${{ github.event.pull_request.number }}..."
-          gh pr merge ${{ github.event.pull_request.number }} --squash
+          echo "Merging pull request #$pr ..."
+          gh pr merge $pr --squash
 
       - name: Comment on Pull Request
         run: |
-          echo "Commenting on pull request #${{ github.event.pull_request.number }}..."
+          echo "Commenting on pull request
           if [ "${{ steps.merge.outcome }}" == "success" ]; then
             echo "Pull request merged successfully."
-            gh pr comment ${{ github.event.pull_request.number }} --body "This pull request has been automatically merged by GitHub Actions.\nThank you for your contribution!"
+            gh pr comment ${{ github.event.pull_request.number }} --body "$MSG_SUCCESS"
           else
             echo "Failed to merge pull request."
-            gh pr comment ${{ github.event.pull_request.number }} --body "Failed to merge this pull request. Please check the mergeability and resolve any conflicts before trying again."
+            gh pr comment ${{ github.event.pull_request.number }} --body "$MSG_FAILURE"
           fi
-          
 
-      - name: Remove Label
+      - name: Remove Label  # Label should be removed in any cases
         run: |
           gh pr edit ${{ github.event.pull_request.number }} --remove-label mergeable
