@@ -113,7 +113,11 @@ $$
 因此
 
 $$
-\left | OA \right | \left | OB \right | =\sqrt{x_1^2+y_1^2} \sqrt{x_2^2+y_2^2}=\frac{a^4b^2+a^2b^4}{b^2x_0^2+a^2y_0^2}=\frac{a^2+b^2}{\frac{x_0^{2}}{a^{2}}-\frac{y_0^{2}}{b^{2}}}   
+\begin{aligned}
+  |OA| |OB| &=\sqrt{x_1^2+y_1^2} \sqrt{x_2^2+y_2^2} \\
+    &=\frac{a^4b^2+a^2b^4}{b^2x_0^2+a^2y_0^2}\\
+    &=\frac{a^2+b^2}{\frac{x_0^{2}}{a^{2}}-\frac{y_0^{2}}{b^{2}}}
+\end{aligned}
 $$
 
 根据 $P(x_0,y_0)$ 在双曲线上，有
