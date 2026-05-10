@@ -138,7 +138,11 @@ $$
 所以由对称性
 
 $$
-\sin{\angle AOB}=\sin{2\angle AOx}=2\sin{\angle AOx}\cos{\angle AOx}=\frac {2ab}{a^2+b^2}
+\begin{aligned}
+  \sin{\angle AOB}&=\sin{2\angle AOx} \\
+    &=2\sin{\angle AOx} \cdot \cos{\angle AOx} \\
+    &=\frac {2ab}{a^2+b^2}
+\end{aligned}
 $$
 
 因此
