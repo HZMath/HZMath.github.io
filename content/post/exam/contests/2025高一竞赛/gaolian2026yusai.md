@@ -19,7 +19,7 @@ tags:
 1.设
 
 $$
-S=\left\{a: a^{2}<2026\right\}, T=\left\{a\right.  ：关于  x  的一元二次方程  x^{2}-4 x+a=0  有整数根  \} . 
+S= \left \{ a: a^{2}<2026 \right \}, T= \left \{ a  ：关于  x  的一元二次方程  x^{2}-4 x+a=0  有整数根 \right \}. 
 $$
 
 则 $S \cap T $ 的元素个数为___.
