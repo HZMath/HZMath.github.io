@@ -1,7 +1,7 @@
 ---
 title: "2026年全国高中数学联赛广东省预赛试题"
 description: 2026全国高联广东省预赛
-date: 2025-05-31
+date: 2026-05-31
 image: 
 math: true
 license: All Right Reserved, 河源中学数学研究协会
