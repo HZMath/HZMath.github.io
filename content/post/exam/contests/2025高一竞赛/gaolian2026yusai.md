@@ -1,6 +1,6 @@
 ---
 title: "2026全国中学生数学奥林匹克竞赛广东赛区初赛"
-description: 2026全国高联广东省预赛
+description: 
 date: 2026-05-31
 image: 
 math: true
@@ -11,7 +11,7 @@ draft: false
 categories:
     - Contests
 tags:
-    - 全国高中数学联赛
+    - 全国中学生数学奥林匹克竞赛
 ---
 
 ## 一试
