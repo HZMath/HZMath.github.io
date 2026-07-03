@@ -47,11 +47,20 @@ tags:
 
 答案暂不提供
 
-<!--
 ##### 第 (1) 问
 
-##### 第 (2) 问
--->
+**【充分性】**:
+
+连接 $OC, OE, OF, DE$, 延长 $DO$ 交 $CE$ 于点 $G$.
+由 $OD = \sqrt{2}+1$ 可知 $OA \cdot OD = 1 = OF^2$,
+则 $\triangle OAF \sim \triangle OFD$, 从而 $\angle OFA = \angle ODF, \angle OAF = \angle OFD$.
+同理有 $\angle OEA = \angle ODE$.
+记 $\angle OFA = \angle ODF = \alpha$, $\angle FAB = \beta$, 则 $\angle OAF = \angle OFD \implies \angle OFC = \beta$.
+由 $OC=OE=OF$ 可得 $\angle OEF = \angle OFE = \alpha, \angle OCF = \angle CFO = \beta$, 结合 $\angle OAE = \angle FAD = \beta$ 有 $\angle GOE = \alpha + \beta = \angle GOC$, 故 $OD \perp CE$.
+
+<!-- **【必要性】**:
+
+##### 第 (2) 问 -->
 
 ### 10. (20分, 4+8+8)
 
