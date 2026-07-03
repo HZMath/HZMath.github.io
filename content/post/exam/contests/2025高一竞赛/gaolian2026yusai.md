@@ -11,7 +11,7 @@ draft: false
 categories:
     - Contests
 tags:
-    - 全国中学生数学奥林匹克竞赛
+    - 广东省中学生数学奥林匹克竞赛
 ---
 
 ## 一试
