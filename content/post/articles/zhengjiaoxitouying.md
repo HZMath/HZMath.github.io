@@ -16,6 +16,7 @@ tags:
 
 
 Part 1
+
 设 $r(t)$ 为点 $t$ 附近一个以 $\frac{r}{2}$ 为半径的邻域，$r \to 0$。
 
 设 $\mu(r(t)) = r w(t)$。令 $\delta_t(x)$ 满足
@@ -65,24 +66,24 @@ $$ N \cdot \Lambda(t) = O(1), $$
 $$ \Lambda(t) = O\left( \frac{1}{N} \right). $$
 
 Part 2
-设 $\mu(\{t\}) > 0$，令 $\delta_t$ 满足
 
-$$ \int_D \delta_t(x) f(x), d\mu = f(t) \mu(\{t\}). $$
+设 $\mu( \\{ t \\} ) > 0$，令 $\delta_t$ 满足
+
+$$ \int_D \delta_t(x) f(x), d\mu = f(t) \mu( \\{ t \\} ). $$
 
 则
 
-$$ |\delta_t|^2 = \int_D \delta_t^2(x), d\mu = \mu(\{t\}). $$
-
+$$ |\delta_t|^2 = \int_D \delta_t^2(x), d\mu = \mu( \\{ t \\ }
 设 ${\varphi_i}$ 为一正交集，$\delta_t$ 被 $\varphi_i$ 表示，则
 
-$$ |\delta_t|^2 = \sum_{i=1}^{n} \alpha_i^2, \qquad \alpha_i = \int_D \delta_t(x) \varphi_i(x), d\mu = \varphi_i(t) \mu(\{t\}). $$
+$$ |\delta_t|^2 = \sum_{i=1}^{n} \alpha_i^2, \qquad \alpha_i = \int_D \delta_t(x) \varphi_i(x), d\mu = \varphi_i(t) \mu( \\{ t \\} ). $$
 
 于是
 
-$$ \mu(\{t\}) = \mu^2(\{t\}) \sum_{i=1}^{n} \varphi_i^2(t). $$
+$$ \mu( \\{ t \\} ) = \mu^2( \\{ t \\} ) \sum_{i=1}^{n} \varphi_i^2(t). $$
 
 设 $\Lambda(t) = \dfrac{1}{\sum_{i=1}^{n} \varphi_i^2(t)}$，则
 
-$$ \Lambda(t) = \mu(\{t\}). $$
+$$ \Lambda(t) = \mu( \\{ t \\} ). $$
 
 结论： 因此，只需观察 $\Lambda(t)$ 随 $N$ 变化的趋势，便能区分原子点与连续点。
