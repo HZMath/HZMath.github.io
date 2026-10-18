@@ -73,7 +73,8 @@ $$ \int_D \delta_t(x) f(x), d\mu = f(t) \mu( \\{ t \\} ). $$
 
 则
 
-$$ |\delta_t|^2 = \int_D \delta_t^2(x), d\mu = \mu( \\{ t \\ }
+$$ |\delta_t|^2 = \int_D \delta_t^2(x), d\mu = \mu( \\{ t \\ }.    $$
+
 设 ${\varphi_i}$ 为一正交集，$\delta_t$ 被 $\varphi_i$ 表示，则
 
 $$ |\delta_t|^2 = \sum_{i=1}^{n} \alpha_i^2, \qquad \alpha_i = \int_D \delta_t(x) \varphi_i(x), d\mu = \varphi_i(t) \mu( \\{ t \\} ). $$
